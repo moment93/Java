@@ -12,5 +12,9 @@ class TestStack{
         for(int i = 0; i < 10; i++)
             System.out.println(mystack1.pop());
 
+        System.out.println("Stack in mystack2:");
+        for(int i = 0; i < 10; i++)
+            System.out.println(mystack2.pop());
+
     }
 }
