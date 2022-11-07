@@ -3,6 +3,12 @@ class Box{
     double height;
     double depth;
 
+    //Notice this constructor. It takes an object of type Box.
+    Box(Box ob){//Pass object to constructor
+        width = ob.width;
+        height = ob.height;
+        depth = ob.depth;
+    }
     //This is the constructor for box
     Box(double w, double h, double d){
         System.out.println("Constructing box");
@@ -12,9 +18,13 @@ class Box{
     }
 
     Box(){
-        width = 10;
-        height = 10;
-        depth = 10;
+        width = -1; //use -1 to indicate uninitialized box
+        height = -1;
+        depth = -1;
+    }
+
+    Box(double len){
+        width = height = depth = len;
     }
 
     //compute and return volume
