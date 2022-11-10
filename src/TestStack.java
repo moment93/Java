@@ -16,5 +16,10 @@ class TestStack{
         for(int i = 0; i < 10; i++)
             System.out.println(mystack2.pop());
 
+        /*These stack statements are not legal
+        mystack1.tos = -2'
+        mystack2.stck[3] = 100;
+         */
+
     }
 }

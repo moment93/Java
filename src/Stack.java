@@ -1,8 +1,8 @@
 //that class defines an integer stack that can hold 10 values
 
 class Stack{
-    int stck[] = new int[10];
-    int tos;
+    private int stck[] = new int[10];
+    private int tos;
 
     //Initialize top of stack
     Stack(){
