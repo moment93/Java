@@ -7,6 +7,9 @@ class ScrapPad{
         RecTestClass rtest = new RecTestClass();
         rtest.PrintRand();
     }
+
+
+
 }
 
 class RecTestClass{
