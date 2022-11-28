@@ -2,7 +2,8 @@
 //This class contains an error and will not compile, change j to public and uncomment line 26
 public class A {
     int i; //public be default
-    private int j; //private to A
+    int j;
+
 
     void setij(int x, int y){
         i = x;
