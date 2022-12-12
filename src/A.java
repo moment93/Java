@@ -12,11 +12,15 @@ public class A {
     void showij(){
         System.out.println("i and j: " + i + " " + j);
     }
+
+    public interface NestedIF{
+        boolean isNotNegative(int x);
+    }
 }
 
 //Create superclass by extending class A
 //A's J is not accessible here
-class B extends A{
+class B extends A implements A.NestedIF {
     int k;
     int total;
 
@@ -27,4 +31,8 @@ class B extends A{
     void sum(){
        // System.out.println("i + j + k: " + (i+j+k));
     } //Error J is not accessible here
+
+    public boolean isNotNegative(int x) {
+        return x < 0 ? false : true;
+    }
 }
