@@ -1,17 +1,17 @@
-public class NewThread implements Runnable {
+//create a second thread by extending thread
+public class NewThread extends Thread {
 
     Thread t;
 
     NewThread(){
-        //Create new second thread
-        t = new Thread(this, "Demo Thread");
-        System.out.println("Child thread: " + t);
+        super("Demo Thread");
+        System.out.println("Child thread: " + this);
     }
 
     //This is the entry point for second thread.
     public void run() {
         try{
-            for(int i = 0; i > 0; i--){
+            for(int i = 5; i > 0; i--){
                 System.out.println("Child thread: " + i);
                 Thread.sleep(500);
             }
