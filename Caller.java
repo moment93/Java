@@ -10,7 +10,7 @@ public class Caller implements Runnable{
         t = new Thread(this);
     }
 
-    public void run(){
+    public void run() {
         target.call(msg);
     }
 }
